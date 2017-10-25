@@ -43,8 +43,7 @@ defmodule YandEx.Translate do
   Returns `{:ok, {translation_dir, text}` or `{:error, message}`
   """
   def translate(text, dst_lang,  src_lang \\ nil) do
-    trans_direction = if from_lang, do: "#{src_lang}-#{dst_lang}", else: dst_lang
-    req_params = [lang: trans_direction]
+    req_params = [lang: dst_lang]
     YandEx.request(get_endpoint(:translate),  get_body([text: text]), get_params(req_params))
     |> parse_response(fn dict -> {dict["lang"], List.first(dict["text"])} end)
   end

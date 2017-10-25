@@ -9,7 +9,7 @@ use Mix.Config
 # 3rd-party users, it should be done in your "mix.exs" file.
 
 # Set config here
-# config :yand_ex, translate_api_key: "YANDEX-API-SECRET"
+config :yand_ex, translate_api_key: "trnsl.1.1.20171005T073720Z.4168c4d04f47d98a.cb9a0a9a7a46686e2299f2ebd7b1b5cb54a46e73"
 
 # Or import config file
-import_config "#{Mix.env}.exs"
+# import_config "#{Mix.env}.exs"

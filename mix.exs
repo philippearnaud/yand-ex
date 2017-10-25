@@ -30,7 +30,7 @@ defmodule YandEx.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:httpoison, "~> 0.8.0"},
-     {:exjsx, "~> 3.2.0", app: false},
-     {:mailer, github: "antp/mailer"}]
+     {:exjsx, "~> 3.2.0", app: false}
+    ]
   end
 end
